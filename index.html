@@ -35,6 +35,7 @@
             100% { transform: translateY(0px); }
         }
         .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+        section { scroll-margin-top: 100px; }
     </style>
 </head>
 <body class="bg-giftlyBg text-giftlyText antialiased">
@@ -108,7 +109,7 @@
         </div>
     </section>
 
-    <!-- Hyper-Localization Feature -->
+    <!-- Hyper-Localization Section -->
     <section class="py-24 bg-white border-y border-black/5">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h2 class="text-3xl font-extrabold mb-12 uppercase tracking-widest text-giftlySub/40">Verified Local Stores In</h2>
@@ -132,6 +133,34 @@
                 <div class="flex flex-col items-center gap-2 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all cursor-default">
                     <span class="text-4xl">🇳🇱</span>
                     <span class="font-bold text-xs uppercase">Netherlands</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-32">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto mb-20">
+                <h2 class="text-5xl font-extrabold mb-6 leading-tight italic">Built for the <br><span class="text-gradient">Next Generation.</span></h2>
+                <p class="text-lg text-giftlySub leading-relaxed">We've integrated 17+ intelligence categories and dual-AI processing to ensure your gift is never generic.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white p-12 rounded-[3.5rem] shadow-xl border border-gray-50 card-hover text-center">
+                    <div class="w-16 h-16 premium-gradient rounded-3xl flex items-center justify-center text-white text-3xl mx-auto mb-10 shadow-lg shadow-orange-500/20">🎯</div>
+                    <h3 class="text-2xl font-black mb-4">Precision Matching</h3>
+                    <p class="text-giftlySub text-sm leading-relaxed">Our Dual-AI engine cross-references age, occasion, and location for a 100% personality match.</p>
+                </div>
+                <div class="bg-white p-12 rounded-[3.5rem] shadow-xl border border-gray-50 card-hover text-center">
+                    <div class="w-16 h-16 premium-gradient rounded-3xl flex items-center justify-center text-white text-3xl mx-auto mb-10 shadow-lg shadow-orange-500/20">💸</div>
+                    <h3 class="text-2xl font-black mb-4">Live Price Engine</h3>
+                    <p class="text-giftlySub text-sm leading-relaxed">High-precision domain filters ensure app prices match store checkout prices down to the cent.</p>
+                </div>
+                <div class="bg-white p-12 rounded-[3.5rem] shadow-xl border border-gray-50 card-hover text-center">
+                    <div class="w-16 h-16 premium-gradient rounded-3xl flex items-center justify-center text-white text-3xl mx-auto mb-10 shadow-lg shadow-orange-500/20">🫂</div>
+                    <h3 class="text-2xl font-black mb-4">Group Voting</h3>
+                    <p class="text-giftlySub text-sm leading-relaxed">Coordinate birthdays with family groups. Create, invite, and vote on the best gift together.</p>
                 </div>
             </div>
         </div>
