@@ -34,6 +34,7 @@
             50% { transform: translateY(-20px); }
             100% { transform: translateY(0px); }
         }
+        .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; }
     </style>
 </head>
 <body class="bg-giftlyBg text-giftlyText antialiased">
@@ -44,169 +45,224 @@
             <div class="text-2xl font-extrabold tracking-tighter text-gradient">Giftly Pro</div>
             <div class="hidden md:flex gap-8 font-semibold text-sm">
                 <a href="#features" class="hover:text-giftlyOrange transition">Features</a>
-                <a href="#how-it-works" class="hover:text-giftlyOrange transition">How it Works</a>
+                <a href="#categories" class="hover:text-giftlyOrange transition">Categories</a>
                 <a href="#team" class="hover:text-giftlyOrange transition">Our Team</a>
                 <a href="#download" class="hover:text-giftlyOrange transition">Download</a>
             </div>
-            <a href="#download" class="premium-gradient text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-lg hover:shadow-giftlyOrange/30 transition-all">Get the App</a>
+            <a href="https://play.google.com/store/apps/details?id=com.giftly.pro" class="premium-gradient text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-lg hover:shadow-giftlyOrange/30 transition-all">Get the App</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 overflow-hidden">
+    <section class="pt-40 pb-24 hero-gradient">
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
             <div class="text-center lg:text-left">
                 <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-giftlyOrange/10 text-giftlyOrange font-bold text-xs uppercase tracking-widest">
-                    ✨ Your Personal AI Gifting Expert
+                    🚀 Now Powered by Dual-AI: Gemini & Ollama
                 </div>
-                <h1 class="text-5xl lg:text-7xl font-black leading-tight mb-8">
-                    Find the <span class="text-gradient">Perfect Gift</span> for the ones you love.
+                <h1 class="text-5xl lg:text-8xl font-black leading-[1.1] mb-8">
+                    Gift Giving,<br> <span class="text-gradient">Redefined.</span>
                 </h1>
-                <p class="text-lg text-giftlySub mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                    Giftly Pro uses advanced AI to understand interests, age, and location, delivering high-quality suggestions that fit your budget perfectly.
+                <p class="text-xl text-giftlySub mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Giftly Pro utilizes high-performance AI and hyper-local data to find verified gifts with 100% live price matching across 50+ trusted stores.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
-                    <a href="https://play.google.com/store/apps/details?id=com.giftly.pro" class="premium-gradient text-white px-8 py-5 rounded-2xl font-bold text-lg shadow-2xl hover:scale-105 transition-transform flex items-center justify-center gap-3">
+                    <a href="https://play.google.com/store/apps/details?id=com.giftly.pro" class="premium-gradient text-white px-10 py-5 rounded-2xl font-bold text-xl shadow-2xl hover:scale-105 transition-transform flex items-center justify-center gap-3">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-6">
-                        Join on Android
+                        Get it on Play Store
                     </a>
                 </div>
-                <div class="mt-8 flex items-center justify-center lg:justify-start gap-4">
-                    <div class="flex -space-x-2">
-                        <div class="w-10 h-10 rounded-full border-2 border-white premium-gradient flex items-center justify-center text-white text-[10px] font-bold">V</div>
-                        <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-800 flex items-center justify-center text-white text-[10px] font-bold">S</div>
-                        <div class="w-10 h-10 rounded-full border-2 border-white bg-giftlyOrange flex items-center justify-center text-white text-[10px] font-bold">A</div>
+                <div class="mt-10 flex items-center justify-center lg:justify-start gap-4">
+                    <div class="flex -space-x-3">
+                        <img src="https://i.pravatar.cc/100?u=1" class="w-10 h-10 rounded-full border-2 border-white">
+                        <img src="https://i.pravatar.cc/100?u=2" class="w-10 h-10 rounded-full border-2 border-white">
+                        <img src="https://i.pravatar.cc/100?u=3" class="w-10 h-10 rounded-full border-2 border-white">
                     </div>
-                    <span class="text-sm font-semibold text-giftlySub italic">Trusted by 20+ beta testers globally</span>
+                    <span class="text-sm font-semibold text-giftlySub italic">Trusted by 1,000+ users worldwide</span>
                 </div>
             </div>
             <div class="relative">
                 <div class="absolute inset-0 premium-gradient opacity-20 blur-[120px] rounded-full"></div>
                 <div class="floating relative z-10 flex justify-center">
-                    <div class="relative bg-giftlyText rounded-[3.5rem] p-4 shadow-2xl border-4 border-giftlyText">
-                         <!-- FIXED: Direct path and lowercase for app preview -->
-                         <img src="app_preview.png" alt="App Preview" class="w-full max-w-[320px] rounded-[2.5rem] min-h-[500px] bg-white/5 object-cover" onerror="this.src='https://via.placeholder.com/320x600/1F1F39/FFFFFF?text=Giftly+Pro+App'">
+                    <div class="relative bg-giftlyText rounded-[3.5rem] p-4 shadow-2xl border-[12px] border-giftlyText">
+                         <div class="bg-white w-full h-full rounded-[2.5rem] overflow-hidden relative min-h-[550px] w-[300px]">
+                            <!-- Mockup App Header -->
+                            <div class="premium-gradient h-24 flex items-center justify-center text-white font-black text-lg">
+                                Gifts for Shiyona
+                            </div>
+                            <!-- Mockup App Suggestions -->
+                            <div class="p-4 space-y-4 bg-gray-50 h-full">
+                                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100">
+                                    <div class="text-2xl mb-2">📱</div>
+                                    <p class="font-bold text-sm">Pixel 9 Pro XL</p>
+                                    <p class="text-[10px] text-orange-600 font-bold mb-1">Top Deal: €842.75</p>
+                                    <div class="w-full h-1 bg-gray-100 rounded"></div>
+                                </div>
+                                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100">
+                                    <div class="text-2xl mb-2">💐</div>
+                                    <p class="font-bold text-sm">Premium Roses</p>
+                                    <p class="text-[10px] text-orange-600 font-bold mb-1">Fresh from FNP India</p>
+                                    <div class="w-full h-1 bg-gray-100 rounded"></div>
+                                </div>
+                            </div>
+                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trusted Partners -->
-    <section class="py-12 bg-white/50 border-y border-black/5">
-        <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-40 grayscale">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="h-8" alt="Amazon">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Bol.com_logo.svg" class="h-10" alt="Bol.com">
-            <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Awin_logo.png" class="h-8" alt="Awin">
-            <span class="text-2xl font-black text-slate-800 tracking-tighter">Gall & Gall</span>
-            <span class="text-2xl font-black text-slate-800 tracking-tighter">HEMA</span>
+    <!-- Hyper-Localization Feature -->
+    <section class="py-24 bg-white border-y border-black/5">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-extrabold mb-12 uppercase tracking-widest text-giftlySub/40">Verified Local Stores In</h2>
+            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+                <div class="flex flex-col items-center gap-2 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
+                    <span class="text-4xl">🇮🇳</span>
+                    <span class="font-bold text-xs uppercase">India</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
+                    <span class="text-4xl">🇺🇸</span>
+                    <span class="font-bold text-xs uppercase">USA</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
+                    <span class="text-4xl">🇬🇧</span>
+                    <span class="font-bold text-xs uppercase">UK</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
+                    <span class="text-4xl">🇦🇪</span>
+                    <span class="font-bold text-xs uppercase">UAE</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
+                    <span class="text-4xl">🇳🇱</span>
+                    <span class="font-bold text-xs uppercase">Netherlands</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Features -->
+    <!-- New Intelligence Section -->
     <section id="features" class="py-32">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-20">
-                <h2 class="text-4xl font-extrabold mb-6">Built for <span class="text-gradient">Meaningful Gifting</span></h2>
-                <p class="text-lg text-giftlySub">Everything you need to find, track, and send gifts without the stress.</p>
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto mb-20">
+                <h2 class="text-5xl font-extrabold mb-6 leading-tight italic">Built for the <br><span class="text-gradient">Next Generation.</span></h2>
+                <p class="text-lg text-giftlySub leading-relaxed">We've integrated 17+ intelligence categories and dual-AI processing to ensure your gift is never generic.</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all border border-black/5">
-                    <div class="w-14 h-14 premium-gradient rounded-2xl flex items-center justify-center text-white text-2xl mb-8 shadow-lg">🤖</div>
-                    <h3 class="text-2xl font-bold mb-4">AI Suggestion Engine</h3>
-                    <p class="text-giftlySub leading-relaxed">Sophisticated logic that analyzes age, gender, and location to find exactly what they'll love.</p>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white p-12 rounded-[3.5rem] shadow-xl border border-gray-50 card-hover text-center">
+                    <div class="w-16 h-16 premium-gradient rounded-3xl flex items-center justify-center text-white text-3xl mx-auto mb-10 shadow-lg shadow-orange-500/20">🎯</div>
+                    <h3 class="text-2xl font-black mb-4">Precision Matching</h3>
+                    <p class="text-giftlySub text-sm leading-relaxed">Our Dual-AI engine cross-references age, occasion, and location for a 100% personality match.</p>
                 </div>
-                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all border border-black/5">
-                    <div class="w-14 h-14 premium-gradient rounded-2xl flex items-center justify-center text-white text-2xl mb-8 shadow-lg">🔔</div>
-                    <h3 class="text-2xl font-bold mb-4">Automatic Reminders</h3>
-                    <p class="text-giftlySub leading-relaxed">Our "Lucky Man" and "Lucky Woman" alerts keep you ahead of every upcoming birthday.</p>
+                <div class="bg-white p-12 rounded-[3.5rem] shadow-xl border border-gray-50 card-hover text-center">
+                    <div class="w-16 h-16 premium-gradient rounded-3xl flex items-center justify-center text-white text-3xl mx-auto mb-10 shadow-lg shadow-orange-500/20">💸</div>
+                    <h3 class="text-2xl font-black mb-4">Live Price Engine</h3>
+                    <p class="text-giftlySub text-sm leading-relaxed">High-precision domain filters ensure app prices match store checkout prices down to the cent.</p>
                 </div>
-                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all border border-black/5">
-                    <div class="w-14 h-14 premium-gradient rounded-2xl flex items-center justify-center text-white text-2xl mb-8 shadow-lg">📍</div>
-                    <h3 class="text-2xl font-bold mb-4">Global Reach</h3>
-                    <p class="text-giftlySub leading-relaxed">Whether you are in India, the USA, or the Netherlands, we show trusted local stores only.</p>
+                <div class="bg-white p-12 rounded-[3.5rem] shadow-xl border border-gray-50 card-hover text-center">
+                    <div class="w-16 h-16 premium-gradient rounded-3xl flex items-center justify-center text-white text-3xl mx-auto mb-10 shadow-lg shadow-orange-500/20">🫂</div>
+                    <h3 class="text-2xl font-black mb-4">Group Voting</h3>
+                    <p class="text-giftlySub text-sm leading-relaxed">Coordinate birthdays with family groups. Create, invite, and vote on the best gift together.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="py-32 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-20">
-                <h2 class="text-4xl font-extrabold mb-6">How <span class="text-gradient">Giftly Pro</span> Works</h2>
-                <p class="text-lg text-giftlySub">Your simple path to thoughtful gifting in 3 simple steps.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-12 text-center relative">
-                <div>
-                    <div class="w-16 h-16 bg-giftlyOrange/10 text-giftlyOrange rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 border-4 border-white shadow-lg">1</div>
-                    <h3 class="text-xl font-bold mb-3">Create Profile</h3>
-                    <p class="text-giftlySub">Enter basic details like name, gender, and date of birth for the person you want to gift.</p>
+    <!-- Categories Grid -->
+    <section id="categories" class="py-32 bg-giftlyText rounded-[5rem] mx-6 mb-32 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-black text-white mb-6">17+ Intelligence Categories</h2>
+            <p class="text-white/40 text-lg mb-20 max-w-xl mx-auto leading-relaxed">Specialized suggestions for every interest, age group, and budget level.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <div class="bg-white/10 p-6 rounded-3xl border border-white/5 backdrop-blur-lg hover:bg-white/20 transition cursor-default">
+                    <span class="text-3xl block mb-2">📱</span>
+                    <span class="text-white font-bold text-sm uppercase tracking-wider">Branded Mobiles</span>
                 </div>
-                <div>
-                    <div class="w-16 h-16 bg-giftlyOrange/10 text-giftlyOrange rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 border-4 border-white shadow-lg">2</div>
-                    <h3 class="text-xl font-bold mb-3">Pick Interests</h3>
-                    <p class="text-giftlySub">Select from categories like tech, sports, or "Cheapest Kids Gifts" to help the AI understand them.</p>
+                <div class="bg-white/10 p-6 rounded-3xl border border-white/5 backdrop-blur-lg hover:bg-white/20 transition cursor-default">
+                    <span class="text-3xl block mb-2">💎</span>
+                    <span class="text-white font-bold text-sm uppercase tracking-wider">Designer Jewellery</span>
                 </div>
-                <div>
-                    <div class="w-16 h-16 bg-giftlyOrange/10 text-giftlyOrange rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 border-4 border-white shadow-lg">3</div>
-                    <h3 class="text-xl font-bold mb-3">Get Suggestions</h3>
-                    <p class="text-giftlySub">Instantly receive 100+ high-quality deals available in your region, sorted by best value.</p>
+                <div class="bg-white/10 p-6 rounded-3xl border border-white/5 backdrop-blur-lg hover:bg-white/20 transition cursor-default">
+                    <span class="text-3xl block mb-2">🏗️</span>
+                    <span class="text-white font-bold text-sm uppercase tracking-wider">Luxury Decor</span>
+                </div>
+                <div class="bg-white/10 p-6 rounded-3xl border border-white/5 backdrop-blur-lg hover:bg-white/20 transition cursor-default">
+                    <span class="text-3xl block mb-2">🎂</span>
+                    <span class="text-white font-bold text-sm uppercase tracking-wider">Localized Cakes</span>
+                </div>
+                <div class="bg-white/10 p-6 rounded-3xl border border-white/5 backdrop-blur-lg hover:bg-white/20 transition cursor-default">
+                    <span class="text-3xl block mb-2">💐</span>
+                    <span class="text-white font-bold text-sm uppercase tracking-wider">Bouquet Flowers</span>
+                </div>
+                <div class="bg-white/10 p-6 rounded-3xl border border-white/5 backdrop-blur-lg hover:bg-white/20 transition cursor-default">
+                    <span class="text-3xl block mb-2">🕹️</span>
+                    <span class="text-white font-bold text-sm uppercase tracking-wider">Gaming Pro</span>
+                </div>
+                <div class="bg-white/10 p-6 rounded-3xl border border-white/5 backdrop-blur-lg hover:bg-white/20 transition cursor-default">
+                    <span class="text-3xl block mb-2">🧸</span>
+                    <span class="text-white font-bold text-sm uppercase tracking-wider">Cheap Kids Gifts</span>
+                </div>
+                <div class="bg-white/10 p-6 rounded-3xl border border-white/5 backdrop-blur-lg hover:bg-white/20 transition cursor-default">
+                    <span class="text-3xl block mb-2">🧘</span>
+                    <span class="text-white font-bold text-sm uppercase tracking-wider">Yoga & Wellness</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Leadership Section -->
-    <section id="team" class="py-32 bg-slate-50">
+    <section id="team" class="py-32">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-extrabold mb-4">Meet the <span class="text-gradient">Leadership</span></h2>
-            <p class="text-lg text-giftlySub mb-20">The minds driving innovation and global growth at Giftly Pro.</p>
+            <h2 class="text-5xl font-black mb-4">Meet the <span class="text-gradient">Leadership</span></h2>
+            <p class="text-lg text-giftlySub mb-24 max-w-2xl mx-auto">The visionaries driving innovation and hyper-personalization at Giftly Pro.</p>
 
-            <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
                 <!-- Founder -->
-                <div class="bg-white p-8 rounded-[3rem] shadow-xl border border-black/5 text-center flex flex-col items-center">
-                    <div class="w-44 h-44 rounded-[2.5rem] overflow-hidden mb-6 shadow-2xl border-4 border-white bg-giftlyPink/5 flex items-center justify-center">
-                         <img src="vinay.jpg" alt="Mr. Vinay Nayak - Founder" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-giftlyPink text-6xl font-black\'>VN</span>'">
+                <div class="bg-white p-12 rounded-[4rem] shadow-2xl shadow-orange-900/5 border border-gray-50 flex flex-col items-center">
+                    <div class="w-48 h-48 rounded-[3rem] overflow-hidden mb-8 shadow-2xl border-4 border-white bg-giftlyOrange/5 flex items-center justify-center">
+                         <img src="vinay.jpg" alt="Mr. Vinay Nayak - Founder" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-giftlyOrange text-6xl font-black\'>VN</span>'">
                     </div>
-                    <h3 class="text-2xl font-extrabold">Mr. Vinay Nayak</h3>
-                    <p class="text-giftlyOrange font-bold text-sm uppercase tracking-widest mb-4">Founder</p>
-                    <p class="text-giftlySub text-sm leading-relaxed mb-6 px-4">
-                        Vinay is the visionary behind Giftly Pro, leading product strategy and innovation. With a focus on modern solutions, he ensures the platform remains a seamless, intelligent ecosystem.
+                    <h3 class="text-3xl font-black mb-1 text-giftlyText">Mr. Vinay Nayak</h3>
+                    <p class="text-giftlyOrange font-bold text-xs uppercase tracking-[0.3em] mb-6">Founder</p>
+                    <p class="text-giftlySub text-sm leading-relaxed mb-8 px-4 font-medium italic">
+                        "Our mission is to eliminate the stress of gifting globally by combining deep AI insights with local market expertise."
                     </p>
-                    <div class="text-xs font-semibold space-y-1">
-                        <p class="text-giftlyText">📧 support@giftlypro.app</p>
+                    <div class="flex gap-4">
+                        <span class="text-xs font-bold bg-giftlyText text-white px-4 py-2 rounded-full">support@giftlypro.app</span>
                     </div>
                 </div>
 
                 <!-- CEO -->
-                <div class="bg-white p-8 rounded-[3rem] shadow-xl border border-black/5 text-center flex flex-col items-center">
-                    <div class="w-44 h-44 rounded-[2.5rem] overflow-hidden mb-6 shadow-2xl border-4 border-white bg-giftlyText flex items-center justify-center">
-                         <img src="shivani.jpg" alt="Mrs. Shivani Nayak - CEO" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-white text-6xl font-black\'>SN</span>'">
+                <div class="bg-white p-12 rounded-[4rem] shadow-2xl shadow-orange-900/5 border border-gray-50 flex flex-col items-center">
+                    <div class="w-48 h-48 rounded-[3rem] overflow-hidden mb-8 shadow-2xl border-4 border-white bg-giftlyText flex items-center justify-center">
+                         <img src="shiyona.jpg" alt="Mrs. Shiyona Nayak - CEO" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<span class=\'text-white text-6xl font-black\'>SN</span>'">
                     </div>
-                    <h3 class="text-2xl font-extrabold">Mrs. Shivani Nayak</h3>
-                    <p class="text-giftlyOrange font-bold text-sm uppercase tracking-widest mb-4">CEO</p>
-                    <p class="text-giftlySub text-sm leading-relaxed mb-6 px-4">
-                        Shivani leads Giftly Pro as CEO, driving operational excellence and strategic growth. Her leadership ensures the platform maintains high standards and global reach.
+                    <h3 class="text-3xl font-black mb-1 text-giftlyText">Mrs. Shiyona Nayak</h3>
+                    <p class="text-giftlyOrange font-bold text-xs uppercase tracking-[0.3em] mb-6">CEO</p>
+                    <p class="text-giftlySub text-sm leading-relaxed mb-8 px-4 font-medium italic">
+                        "Giftly Pro is built on relationships. Every suggestion is carefully curated to reflect the love and thought you put into gifting."
                     </p>
-                    <div class="text-xs font-semibold space-y-1">
-                        <p class="text-giftlyText">📧 support@giftlypro.app</p>
+                    <div class="flex gap-4">
+                        <span class="text-xs font-bold bg-giftlyText text-white px-4 py-2 rounded-full">support@giftlypro.app</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section id="download" class="py-32">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <div class="premium-gradient rounded-[3rem] p-12 md:p-20 text-white relative z-10 shadow-2xl overflow-hidden">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-                <h2 class="text-4xl md:text-5xl font-black mb-8 leading-tight text-center">Elevate your gifting <br>experience today.</h2>
+    <!-- Stats and Download -->
+    <section id="download" class="py-32 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="premium-gradient rounded-[4rem] p-16 md:p-24 text-white relative z-10 shadow-2xl overflow-hidden text-center">
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full"></div>
+                <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-black/5 rounded-full"></div>
+
+                <h2 class="text-4xl md:text-6xl font-black mb-10 leading-tight">Elevate your <br>gifting game today.</h2>
                 <div class="flex justify-center">
-                    <a href="https://play.google.com/store/apps/details?id=com.giftly.pro" class="bg-giftlyText text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-opacity-90 transition shadow-xl inline-flex items-center gap-3">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store" class="h-6">
-                        Get it on Android
+                    <a href="https://play.google.com/store/apps/details?id=com.giftly.pro" class="bg-giftlyText text-white px-12 py-6 rounded-[2rem] font-black text-xl hover:scale-105 transition shadow-2xl inline-flex items-center gap-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store" class="h-8">
+                        Join on Android
                     </a>
                 </div>
             </div>
@@ -214,20 +270,20 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-16 border-t border-black/5">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10 text-center md:text-left">
-            <div>
-                <div class="text-2xl font-black text-gradient mb-4">Giftly Pro</div>
-                <p class="text-giftlySub text-sm max-w-xs">Your AI companion for thoughtful gifting worldwide.</p>
+    <footer class="py-24 border-t border-black/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="text-center md:text-left">
+                <div class="text-3xl font-black text-gradient mb-4 tracking-tighter">Giftly Pro</div>
+                <p class="text-giftlySub text-sm max-w-xs font-medium leading-relaxed">The world's first hyper-localized gift suggestion engine powered by Dual-AI.</p>
             </div>
-            <div class="flex gap-10 font-bold text-sm text-giftlySub">
-                <a href="privacy.html" class="hover:text-giftlyOrange transition">Privacy</a>
-                <a href="terms.html" class="hover:text-giftlyOrange transition">Terms</a>
-                <a href="mailto:support@giftlypro.app" class="hover:text-giftlyOrange transition">Support</a>
+            <div class="flex flex-wrap justify-center gap-10 font-black text-[10px] uppercase tracking-[0.3em] text-giftlySub/60">
+                <a href="privacy.html" class="hover:text-giftlyOrange transition">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-giftlyOrange transition">Terms of Use</a>
+                <a href="mailto:support@giftlypro.app" class="hover:text-giftlyOrange transition">Business Support</a>
             </div>
         </div>
-        <div class="mt-16 pt-8 border-t border-black/5 text-center text-giftlySub text-sm italic">
-            &copy; 2026 Giftly Pro. All rights reserved.
+        <div class="mt-20 pt-10 border-t border-black/5 text-center text-giftlySub/40 text-[9px] uppercase font-bold tracking-[0.4em]">
+            &copy; 2026 Giftly Pro. Precision Engineered for Shiyona Nayak.
         </div>
     </footer>
 
