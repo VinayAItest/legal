@@ -70,7 +70,6 @@
                 <a href="#features" class="hover:text-giftlyOrange transition">Features</a>
                 <a href="#guides" class="hover:text-giftlyOrange transition">Gift Guides</a>
                 <a href="#team" class="hover:text-giftlyOrange transition">Our Team</a>
-                <!-- Language Selector -->
                 <div id="google_translate_element"></div>
             </div>
             <a href="#download" class="premium-gradient text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-lg hover:shadow-giftlyOrange/30 transition-all">Get the App</a>
@@ -106,11 +105,9 @@
                 <div class="floating relative z-10 flex justify-center">
                     <div class="relative bg-giftlyText rounded-[3.5rem] p-4 shadow-2xl border-[12px] border-giftlyText">
                          <div class="bg-white w-full h-full rounded-[2.5rem] overflow-hidden relative min-h-[550px] w-[300px]">
-                            <!-- Mockup App Header -->
                             <div class="premium-gradient h-24 flex items-center justify-center text-white font-black text-lg">
                                 Gifts for Shiyona
                             </div>
-                            <!-- Mockup App Suggestions -->
                             <div class="p-4 space-y-4 bg-gray-50 h-full">
                                 <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100">
                                     <div class="text-2xl mb-2">📱</div>
@@ -207,32 +204,32 @@
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Guide 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-black/5">
+                <a href="guide-tech.html" class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-black/5 block">
                     <div class="h-48 bg-giftlyText flex items-center justify-center text-4xl group-hover:scale-110 transition-transform">📱</div>
                     <div class="p-8">
                         <h3 class="text-xl font-bold mb-3 group-hover:text-giftlyOrange transition">Top 10 Tech Gifts for 2026</h3>
                         <p class="text-giftlySub text-sm mb-6">From high-performance smartphones to smart home gear, we've ranked the best value tech.</p>
                         <span class="text-xs font-bold text-giftlyOrange uppercase tracking-widest border-b-2 border-giftlyOrange pb-1">Read Full Guide</span>
                     </div>
-                </div>
+                </a>
                 <!-- Guide 2 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-black/5">
+                <a href="guide-bakery.html" class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-black/5 block">
                     <div class="h-48 bg-giftlyOrange/10 flex items-center justify-center text-4xl group-hover:scale-110 transition-transform">🎂</div>
                     <div class="p-8">
                         <h3 class="text-xl font-bold mb-3 group-hover:text-giftlyOrange transition">Best Local Bakeries in NL</h3>
                         <p class="text-giftlySub text-sm mb-6">A guide to the finest cakes and pastries from Albert Heijn, HEMA, and Dirk.</p>
                         <span class="text-xs font-bold text-giftlyOrange uppercase tracking-widest border-b-2 border-giftlyOrange pb-1">Read Full Guide</span>
                     </div>
-                </div>
+                </a>
                 <!-- Guide 3 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-black/5">
+                <a href="guide-jewellery.html" class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-black/5 block">
                     <div class="h-48 bg-giftlyAmber/20 flex items-center justify-center text-4xl group-hover:scale-110 transition-transform">💎</div>
                     <div class="p-8">
                         <h3 class="text-xl font-bold mb-3 group-hover:text-giftlyOrange transition">Luxury Jewellery Trends</h3>
                         <p class="text-giftlySub text-sm mb-6">How to choose timeless pieces from Cartier and Tiffany without breaking the bank.</p>
                         <span class="text-xs font-bold text-giftlyOrange uppercase tracking-widest border-b-2 border-giftlyOrange pb-1">Read Full Guide</span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -241,9 +238,7 @@
     <section class="py-20">
         <div class="max-w-4xl mx-auto px-6">
             <div class="bg-white border-l-4 border-giftlyOrange p-8 rounded-r-[2rem] shadow-2xl shadow-orange-900/5">
-                <h3 class="font-black text-giftlyText text-xl mb-4 flex items-center gap-3">
-                    Professional Disclaimer
-                </h3>
+                <h3 class="font-black text-giftlyText text-xl mb-4 flex items-center gap-3">Professional Disclaimer</h3>
                 <p class="text-giftlySub text-sm leading-relaxed mb-4">
                     Giftly Pro provides intelligent suggestions and automated routing for your convenience. Please be advised that we provide <strong>suggestions only</strong>. All actual purchases are completed on external third-party e-commerce platforms (Amazon, Sephora, etc.).
                 </p>
@@ -263,8 +258,11 @@
             <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
                 <!-- Founder -->
                 <div class="bg-white p-12 rounded-[4rem] shadow-2xl shadow-orange-900/5 border border-gray-50 flex flex-col items-center">
-                    <div class="w-48 h-48 rounded-[3rem] overflow-hidden mb-8 shadow-2xl border-4 border-white bg-giftlyOrange/5 flex items-center justify-center">
-                         <span class='text-giftlyOrange text-6xl font-black'>VN</span>
+                    <div class="w-48 h-48 rounded-[3rem] overflow-hidden mb-8 shadow-2xl border-4 border-white bg-giftlyOrange/5 flex items-center justify-center relative">
+                         <!-- Branded Placeholder Background -->
+                         <div class="absolute inset-0 flex items-center justify-center bg-giftlyOrange/5 text-giftlyOrange text-6xl font-black">VN</div>
+                         <!-- Actual Image Layer -->
+                         <img src="vinay.jpg" alt="Mr. Vinay Nayak - Founder" class="w-full h-full object-cover relative z-10" onerror="this.style.opacity='0'">
                     </div>
                     <h3 class="text-3xl font-black mb-1 text-giftlyText">Mr. Vinay Nayak</h3>
                     <p class="text-giftlyOrange font-bold text-xs uppercase tracking-[0.3em] mb-6">Founder</p>
@@ -275,8 +273,11 @@
 
                 <!-- CEO -->
                 <div class="bg-white p-12 rounded-[4rem] shadow-2xl shadow-orange-900/5 border border-gray-50 flex flex-col items-center">
-                    <div class="w-48 h-48 rounded-[3rem] overflow-hidden mb-8 shadow-2xl border-4 border-white bg-giftlyText flex items-center justify-center">
-                         <span class='text-white text-6xl font-black'>SN</span>
+                    <div class="w-48 h-48 rounded-[3rem] overflow-hidden mb-8 shadow-2xl border-4 border-white bg-giftlyText flex items-center justify-center relative">
+                         <!-- Branded Placeholder Background -->
+                         <div class="absolute inset-0 flex items-center justify-center bg-giftlyText text-white text-6xl font-black">SN</div>
+                         <!-- Actual Image Layer -->
+                         <img src="shivani.jpg" alt="Mrs. Shivani Nayak - CEO" class="w-full h-full object-cover relative z-10" onerror="this.style.opacity='0'">
                     </div>
                     <h3 class="text-3xl font-black mb-1 text-giftlyText">Mrs. Shivani Nayak</h3>
                     <p class="text-giftlyOrange font-bold text-xs uppercase tracking-[0.3em] mb-6">CEO</p>
@@ -294,7 +295,6 @@
             <div class="premium-gradient rounded-[4rem] p-16 md:p-24 text-white relative z-10 shadow-2xl overflow-hidden text-center">
                 <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full"></div>
                 <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-black/5 rounded-full"></div>
-
                 <h2 class="text-4xl md:text-6xl font-black mb-10 leading-tight">Elevate your <br>gifting game today.</h2>
                 <div class="flex justify-center">
                     <a href="https://play.google.com/store/apps/details?id=com.giftly.pro" class="bg-giftlyText text-white px-12 py-6 rounded-[2rem] font-black text-xl hover:scale-105 transition shadow-2xl inline-flex items-center gap-4">
@@ -335,6 +335,5 @@
         }
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 </body>
 </html>
