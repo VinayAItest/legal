@@ -4,68 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Giftly Pro</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .text-gradient { background: linear-gradient(135deg, #FF9800 0%, #FFC107 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #FF9800; }
+        h2 { color: #FFC107; margin-top: 30px; }
+        .footer { margin-top: 50px; font-size: 0.8em; color: #777; border-top: 1px solid #eee; padding-top: 20px; }
+        .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        .logo { font-weight: 800; font-size: 1.5em; color: #FF9800; text-decoration: none; }
+
+        /* Google Translate Customization */
+        .goog-te-gadget-simple { background-color: transparent !important; border: none !important; font-size: 14px !important; cursor: pointer; }
+        .goog-te-gadget-icon { display: none !important; }
+        iframe.goog-te-banner-frame { display: none !important; }
+        body { top: 0px !important; }
     </style>
 </head>
-<body class="bg-[#FDFCFE] text-[#1F1F39] selection:bg-orange-100">
-    <div class="max-w-4xl mx-auto px-6 py-20">
-        <nav class="mb-16">
-            <a href="index.html" class="inline-flex items-center space-x-2 text-sm font-bold text-orange-600 hover:text-orange-700 transition-colors">
-                <i class="fas fa-arrow-left"></i>
-                <span>Back to Home</span>
-            </a>
-        </nav>
-
-        <div class="bg-white rounded-[4rem] p-10 md:p-20 shadow-2xl shadow-orange-900/5 border border-gray-50">
-            <div class="mb-16">
-                <div class="inline-block bg-orange-100 text-[#E65100] px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6">Legal Framework</div>
-                <h1 class="text-5xl md:text-6xl font-black text-gradient mb-4 leading-tight">Privacy Policy</h1>
-                <p class="text-[#858597] font-semibold text-sm">Last Updated: 1 July 2026</p>
-            </div>
-
-            <div class="space-y-12 text-[#1F1F39]/80 leading-relaxed text-lg">
-                <section>
-                    <h2 class="text-2xl font-black text-[#1F1F39] mb-6 flex items-center gap-3">
-                        <span class="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-orange-600 text-sm">1</span>
-                        Data We Collect
-                    </h2>
-                    <p class="mb-6">To provide high-precision gift suggestions for Shivani and our global community, we collect:</p>
-                    <ul class="list-disc pl-8 space-y-4 text-base font-medium">
-                        <li><strong>Account Identity:</strong> Secure email authentication via Supabase.</li>
-                        <li><strong>Recipient Intelligence:</strong> Names, ages, and dynamic interest tags used to power the AI logic.</li>
-                        <li><strong>Engagement Logs:</strong> Interaction data to refine our dual-AI recommendation accuracy.</li>
-                        <li><strong>Geographic Data:</strong> Used strictly for hyper-localization of stores (India, US, UK, UAE, NL).</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2 class="text-2xl font-black text-[#1F1F39] mb-6 flex items-center gap-3">
-                        <span class="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-orange-600 text-sm">2</span>
-                        AI Processing Logic
-                    </h2>
-                    <p class="text-base font-medium">Your requests are processed in real-time through our proprietary Dual-AI engine. We do not sell your personal data to advertisers. Our intelligence is used solely to find the perfect gift.</p>
-                </section>
-
-                <section>
-                    <h2 class="text-2xl font-black text-[#1F1F39] mb-6 flex items-center gap-3">
-                        <span class="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-orange-600 text-sm">3</span>
-                        Affiliate Disclosure
-                    </h2>
-                    <p class="text-base font-medium">Giftly Pro is a participant in various affiliate marketing programs, including Awin and Amazon Associates. This means that we may earn a commission if you click on a link to a retailer's website and make a purchase. This does not result in any additional cost to you, and we only suggest products from trusted retailers that match your search criteria. These commissions support our 24/7 AI operations.</p>
-                </section>
-
-                <section class="pt-16 border-t border-gray-100">
-                    <p class="text-sm text-[#858597] font-bold text-center">
-                        &copy; 2026 Giftly Pro. All Rights Reserved. <br>
-                        Contact: support@giftlypro.app
-                    </p>
-                </section>
-            </div>
-        </div>
+<body>
+    <div class="nav">
+        <a href="index.html" class="logo">Giftly Pro</a>
+        <div id="google_translate_element"></div>
     </div>
+    <h1>Privacy Policy</h1>
+    <p>Last Updated: May 2024</p>
+    <p>Welcome to Giftly Pro. We value your privacy and are committed to protecting your personal data.</p>
+
+    <h2>1. Data We Collect</h2>
+    <p>We collect information to provide a better experience, including:</p>
+    <ul>
+        <li><strong>Account Information:</strong> Email address and password when you register.</li>
+        <li><strong>Recipient Data:</strong> Names, ages, and interests you save to generate gift suggestions.</li>
+        <li><strong>Usage Data:</strong> Information about how you use the app, such as search queries and clicks.</li>
+        <li><strong>Device Information:</strong> Region, currency, and language settings to localize your experience.</li>
+    </ul>
+
+    <h2>2. How We Use Your Data</h2>
+    <p>Your data is used to:</p>
+    <ul>
+        <li>Provide personalized gift recommendations.</li>
+        <li>Synchronize your data across devices.</li>
+        <li>Improve our AI suggestion engine.</li>
+        <li>Notify you of upcoming special occasions.</li>
+    </ul>
+
+    <h2>3. Data Security</h2>
+    <p>We use industry-standard encryption (AES-256) to protect your data locally and secure communication (HTTPS) with our servers. Account data is managed via Supabase, ensuring high security standards.</p>
+
+    <h2>4. Affiliate Disclosure</h2>
+    <p>Giftly Pro participates in various affiliate marketing programs. When you click on a gift suggestion and make a purchase, we may receive a small commission at no extra cost to you.</p>
+
+    <h2>5. Your Rights</h2>
+    <p>You can delete your account and all associated data at any time via the Settings menu in the app.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions, please contact us at support@giftly.pro</p>
+
+    <div class="footer">
+        &copy; 2026 Giftly Pro. All rights reserved.
+    </div>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
